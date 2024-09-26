@@ -32,5 +32,6 @@ jobs:
     - id: 'deploy'
       uses: 'google-github-actions/deploy-cloudrun@v2'
       with:
+        project_id: ${{ secrets.GOOGLE_PROJECT }}
         service: 'hello-cloud-run'
         image: 'us-central1-docker.pkg.dev/$GOOGLE_PROJECT/cicdtest/nginx:latest'
