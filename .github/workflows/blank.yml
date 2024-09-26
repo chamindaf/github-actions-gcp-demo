@@ -34,4 +34,7 @@ jobs:
       with:
         project_id: ${{ secrets.GOOGLE_PROJECT }}
         service: 'hello-cloud-run'
-        image: 'us-central1-docker.pkg.dev/$GOOGLE_PROJECT/cicdtest/nginx:latest'
+        image: 'us-central1-docker.pkg.dev/flutterflow-lion-poc/cicdtest/nginx:latest'
+        region: 'us-central1'
+        
+        
